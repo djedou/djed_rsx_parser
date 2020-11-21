@@ -1,0 +1,18 @@
+[package]
+name = "djed_rsx_parser"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+name = "djed_rsx_parser"
+#proc_macro = true
+
+[dependencies]
+combine = "2.3.2"
+itertools = "0.9.0"#0.7.4"
+quote = "0.3.15"
+rand = "0.4.1"
+djed_rsx_shared = { git = "https://github.com/djedou/djed_rsx_shared.git", default-features = false }
+djed_self_tokenize_macro = { git = "https://github.com/djedou/djed_self_tokenize.git"}
+djed_self_tokenize_trait = { git = "https://github.com/djedou/djed_self_tokenize.git"}
+syn = { version = "0.11.11", features = ["full"] } #0.11.11
